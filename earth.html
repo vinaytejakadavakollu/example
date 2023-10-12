@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            position: absolute;
+            left:50%;
+            top:50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        }
+        #earth{
+            width:300px;
+            height:300px;
+            background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+            border-radius: 50%;
+            background-size: 610px;
+            box-shadow: inset 8px 36px 80px 36px rgb(0,0,0), indet -6px 0 12pxx 4px rgba(255 ,255, 255, 0.3);
+           animation-name: rotate;
+           animation-duration: 8s;
+           animation-iteration-count: infinite;
+           animation-timing-function: linear;
+        }
+        @keyframes rotate{
+            from{
+                background-position: 0px 0px;
+            }
+            to{
+                background-position: 610px 0px;
+            }
+            }
+            h1{
+                position: absolute;
+                left:50px;
+                top: -100px;
+                color:white;
+            }
+        
+    </style>
+</head>
+<body>
+    <h1><B>THE GLOBE</B></h1>
+    <div id="earth"></div>
+    <h2><b></b></h2>
+</body>
+</html>
